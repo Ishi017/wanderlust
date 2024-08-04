@@ -1,0 +1,206 @@
+body{
+    background-color: #fffff9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex:1;
+}
+
+.navbar{
+    height: 6rem;
+    background-color: #fffff9;
+}
+
+a h2{
+    font-size: 2rem;
+    color: #fe424d;
+}
+
+.nav-link{
+    color: #323131 !important;
+}
+
+/* footer */
+.f-info{
+    display:flex;
+    flex-wrap: wrap;
+    height: 8rem;
+    background-color: #ebebeb;
+    color:#222222;
+}
+
+.f-info-brand, .f-info-socials, .f-info-links{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    gap: 1rem;
+}
+
+.f-info-socials i{
+    font-size:1.2rem;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color:#222222;
+}
+
+.f-info-links a:hover{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* cards */
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.listing-img{
+    border-radius: 1rem !important;
+    width: 100%;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-title p{
+    font-weight: 400 !important;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: #ebebeb;
+}
+
+.add-btn, .edit-btn{
+    background-color:#fe424d !important;
+    border: none !important;
+}
+
+/* show page */
+
+.show-flex{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:1rem 9rem;
+    margin: 5rem 0; 
+    /* gap:0.2rem; */
+}
+
+.show-flex-1{
+    width:40%;
+}
+
+.show-flex-2{
+    width:40%;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.show-img{
+    height:55vh;
+    width: 70vh;
+    /* max-width: fit-content; */
+    border-radius: 1rem;
+}
+
+.show-btns{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+/* review form */
+.show-flex-3{
+    position: relative;
+    bottom:1rem;
+}
+
+
+/* edit page */
+.edit-image-url{
+    height: 10rem;
+    width:14rem;
+}
+
+/* index page */
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.filter{
+    text-align: center;
+    opacity: 0.6;
+    margin-right: 2.5rem;
+}
+
+.filter:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.filter p{
+    font-size: 0.9rem;
+}
+
+.tax-toggle{
+    text-align: center;
+    max-height: 3.1rem;
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+    padding: 0.8rem 1.5rem;
+    margin-left: 9.2rem;
+    font-size: 1rem;
+    border: 1px solid rgb(35, 34, 34);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.tax-toggle:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.tax-info{
+    display: none;
+    font-size: 0.9rem;
+}
+
+.search-btn i{
+    display: inline;
+    margin-right: 0.9rem;
+}
+
+.search-btn{
+    border-radius: 5rem !important;
+    padding: 0 1.3rem 0 1.2rem !important;
+}
+
+.search-inp{
+    border-radius: 1.5rem !important;
+    padding: 0.5rem 2rem 0.5rem 2rem !important;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+

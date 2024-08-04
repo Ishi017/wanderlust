@@ -1,0 +1,38 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+
+    <div class="row"> <div class="col-8 offset-2">
+        <h3>Create a New Listing</h3><br/>
+    <form method="POST" action="/listings" novalidate class="needs-validation" enctype="multipart/form-data">
+        <div>
+   <label for="title" class="form-label">Title</label>
+   <input name="listing[title]" placeholder="enter title" class="form-control" required/>
+       </div> <br/>
+       <div>
+    <label for="description" class="form-label">Description</label><br/>
+    <textarea  name="listing[description]" class="form-control" required></textarea>
+        </div> <br/>
+        <div>
+    <label for="imageUrl" class="form-label">Upload Image</label>
+    <input name="listing[image]" type="file" placeholder="enter image URL/Link" class="form-control" required/> 
+        </div> <br/>
+        <div class="row">
+        <div class="col-md-4">
+    <label for="price" class="form-label">Price</label><br/>
+    <input name="listing[price]" placeholder="enter price" type="number"class="form-control" required/> 
+        </div> <br/>
+        <div class="col-md-8">
+    <label for="country" class="form-label">Country</label><br/>
+    <input name="listing[country]" placeholder="India" class="form-control" required /> 
+        </div> <br/>
+        </div>
+        <div>
+    <label for="location" class="form-label">Location</label><br/>
+    <input name="listing[location]" placeholder="enter location" class="form-control" required /> 
+        </div> <br/>
+        
+
+    <button class="btn btn-dark add-btn">Add</button> <br/> <br/>
+    </form>
+</div></div>
+</body>
