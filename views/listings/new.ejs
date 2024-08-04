@@ -1,6 +1,4 @@
 <% layout("/layouts/boilerplate") %>
-<body>
-
     <div class="row"> <div class="col-8 offset-2">
         <h3>Create a New Listing</h3><br/>
     <form method="POST" action="/listings" novalidate class="needs-validation" enctype="multipart/form-data">
@@ -25,14 +23,27 @@
     <label for="country" class="form-label">Country</label><br/>
     <input name="listing[country]" placeholder="India" class="form-control" required /> 
         </div> <br/>
-        </div>
+        </div><br/>
         <div>
     <label for="location" class="form-label">Location</label><br/>
     <input name="listing[location]" placeholder="enter location" class="form-control" required /> 
         </div> <br/>
+    
+            <label for="categories" class="form-label">Select categories :</label><br/>
+            <div class="categories-list">
+                <input type="checkbox" name="listing[categories][]" value="mountains"> Mountains<br/>
+                <input type="checkbox" name="listing[categories][]" value="beaches"> Beaches<br/>
+                <input type="checkbox" name="listing[categories][]" value="gym"> Gym<br/>
+                <input type="checkbox" name="listing[categories][]" value="city"> City<br/>
+                <input type="checkbox" name="listing[categories][]" value="nature"> Nature<br/>
+                <input type="checkbox" name="listing[categories][]" value="lake front"> Lake Front<br/>
+                <input type="checkbox" name="listing[categories][]" value="trending"> Trending<br/>
+                <input type="checkbox" name="listing[categories][]" value="swimming pool"> Swimming Pool<br/>
+                <input type="checkbox" name="listing[categories][]" value="camps"> Camps<br/>
+        </div><br/></br>
         
-
     <button class="btn btn-dark add-btn">Add</button> <br/> <br/>
+    </div></div>
     </form>
-</div></div>
-</body>
+
+

@@ -3,7 +3,8 @@ const router = express.Router();
 const wrapAsync = require("../utils/wrapAsync.js");
 const passport = require("passport");
 const { saveRedirectUrl } = require("../middleware.js");
-const userController = require("../controllers/user.js")
+const userController = require("../controllers/user.js");
+const Listing = require('../models/listing'); 
 
 //signup
 router.route("/signup")
@@ -16,5 +17,11 @@ router.route("/login")
 userController.loginPost )
 
 router.get("/logout",  userController.logout );
+
+//misc routes
+router.get("/aboutus", (req,res) => {
+    res.render("aboutUs.ejs");
+});
+
 
 module.exports = router;

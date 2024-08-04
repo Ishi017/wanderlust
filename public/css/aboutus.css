@@ -1,0 +1,45 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+} */
+
+.about-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #fe424d;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.section {
+    margin: 50px 0;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #fe424d;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+

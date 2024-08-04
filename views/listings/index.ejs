@@ -1,42 +1,42 @@
 <% layout("/layouts/boilerplate") %>
 <body>
     <div class="filters">
-      <div class="filter">
+      <a href="/listings/category/trending"  class="filter  <%= currentPath === '/category/trending' ? 'active' : '' %>">
         <i class="fa-solid fa-fire"></i>
         <p>Trending</p>
-      </div>
-      <div class="filter">
+      </a>
+      <a href="/listings/category/city" class="filter  <%= currentPath === '/category/city' ? 'active' : '' %>">
         <i class="fa-solid fa-city"></i>
         <p>Top Cities</p>
-      </div>
-      <div class="filter">
+      </a>
+      <a href="/listings/category/mountains" class="filter  <%= currentPath === '/category/mountains' ? 'active' : '' %>">
         <i class="fa-solid fa-mountain"></i>
         <p>Mountains</p>
-      </div>
-      <div class="filter">
+      </a>
+      <a href="/listings/category/beaches" class="filter  <%= currentPath === '/category/beaches' ? 'active' : '' %>">
         <i class="fa-solid fa-umbrella-beach"></i>
         <p>Beaches</p>
-      </div>
-      <div class="filter">
+      </a>
+      <a href="/listings/category/pool" class="filter <%= currentPath === '/category/pool' ? 'active' : '' %>">
         <i class="fa-solid fa-person-swimming"></i>
         <p>Swimming Pools</p>
-      </div>
-      <div class="filter">
+      </a>
+      <a href="/listings/category/lake" class="filter  <%= currentPath === '/category/lake' ? 'active' : '' %>">
         <i class="fa-solid fa-water"></i>
         <p>Lake Front</p>
-      </div>
-      <div class="filter">
+      </a>
+      <a href="/listings/category/gym" class="filter  <%= currentPath === '/category/gym' ? 'active' : '' %>">
         <i class="fa-solid fa-dumbbell"></i>
         <p>Fancy Gyms</p>
-      </div>
-      <div class="filter">
+      </a>
+      <a href="/listings/category/nature"  class="filter  <%= currentPath === '/category/nature' ? 'active' : '' %>">
         <i class="fa-solid fa-leaf"></i>
         <p>Nature</p>
-      </div>
-      <div class="filter">
+      </a>
+      <a href="/listings/category/camps"  class="filter  <%= currentPath === '/category/camps' ? 'active' : '' %>">
         <i class="fa-solid fa-tent"></i>
         <p>Camps</p>
-      </div>
+      </a>
 
       <div class="tax-toggle">
         <div class="form-check-reverse form-switch">
@@ -64,6 +64,7 @@
     </div>
 
     <script>
+
       let taxSwitch = document.getElementById("flexSwitchCheckDefault");
       taxSwitch.addEventListener("click", () => {
         let taxInfo = document.getElementsByClassName("tax-info");

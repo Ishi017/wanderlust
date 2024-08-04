@@ -147,6 +147,11 @@ a h2{
     padding-bottom: 1rem;
 }
 
+.filters a{
+    text-decoration: none;
+    color:#222222;
+}
+
 .filter{
     text-align: center;
     opacity: 0.6;
@@ -158,6 +163,13 @@ a h2{
     cursor: pointer;
 }
 
+.active{
+    opacity: 1;
+    cursor: pointer;
+    text-decoration: underline !important;
+    text-underline-offset: 7px;
+}
+
 .filter p{
     font-size: 0.9rem;
 }
@@ -167,18 +179,16 @@ a h2{
     max-height: 3.1rem;
     display: flex;
     align-items: center;
-    opacity: 0.6;
     padding: 0.8rem 1.5rem;
     margin-left: 9.2rem;
     font-size: 1rem;
-    border: 1px solid rgb(35, 34, 34);
+    opacity: 0.8;
     border-radius: 1rem;
     cursor: pointer;
 }
 
 .tax-toggle:hover{
-    opacity: 0.9;
-    cursor: pointer;
+    opacity: 1;
 }
 
 .tax-info{
@@ -203,4 +213,16 @@ a h2{
     text-align: center;
 }
 
+/* new */
+
+
+.categories-list input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 0.3rem;
+    margin-left: 1rem;
+}
+
+.categories-list br {
+    display: none; /* Removes the line breaks */
+}
 

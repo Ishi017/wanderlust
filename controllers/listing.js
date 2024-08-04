@@ -3,7 +3,7 @@ const Listing = require("../models/listing.js");
 //index
 module.exports.index = async (req,res) => {
     const allListings = await Listing.find();
-    res.render( "listings/index.ejs" , {allListings} );
+    res.render( "listings/index.ejs" , {allListings, currentPath: req.path} );
 }
 
 //new
@@ -70,5 +70,18 @@ module.exports.delete = async (req,res) => {
     req.flash("success" , " Listing Deleted !");
     console.log(deletedList);
     res.redirect("/listings");
+}
+
+//category
+module.exports.category = async (req, res) => {
+    try {
+        const { category } = req.params;
+        const listings = await Listing.find({ categories: category });
+        // console.log(req.path);
+        res.render('listings/index.ejs', { allListings: listings, category , currentPath: req.path});
+    } catch (error) {
+        console.error(error);
+        res.redirect('/listings');
+    }
 }
 
