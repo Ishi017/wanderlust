@@ -14,6 +14,12 @@ body{
     background-color: #fffff9;
 }
 
+@media (max-width: 1100px) {
+    .navbar-searchbar {
+      display: none !important; 
+    }
+}
+
 a h2{
     font-size: 2rem;
     color: #fe424d;
@@ -21,6 +27,11 @@ a h2{
 
 .nav-link{
     color: #323131 !important;
+}
+
+.navbar-collapse {
+    background-color: #fffff9;
+    opacity: 0.8; 
 }
 
 /* footer */
@@ -103,7 +114,7 @@ a h2{
     /* gap:0.2rem; */
 }
 
-.show-flex-1{
+/* .show-flex-1{
     width:40%;
 }
 
@@ -111,7 +122,12 @@ a h2{
     width:40%;
     word-wrap: break-word;
     overflow: hidden;
-}
+} */
+
+.show-flex-1, .show-flex-2 {
+    flex: 1;
+    padding: 10px;
+  }
 
 .show-img{
     height:55vh;
